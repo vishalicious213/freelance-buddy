@@ -22,6 +22,14 @@ h1, h2 {
 
 }
 
+#company-signature, #customer-signature {
+    margin-bottom: 0;
+}
+
+.sign-line {
+    margin-top: 0;
+}
+
 span {
     color: red;
 }
