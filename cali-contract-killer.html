@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>The Contract</h1>
-    <h4>Between <span id="company-name">[company name]</span></h4>
+    <h4>Between <span class="company-name">[company name]</span></h4>
     <h4>And <span class="customer-name">[customer name]</span></h4>
 
     <h2>Summary</h2>
@@ -76,8 +76,8 @@
     <p>You agree to pay for my services as outlined in the following payment schedule:</p>
     <p>[Payment details]</p>
     <p>[Payment schedule]</p>
-    <p>I issue invoices electronically. My payment terms are [number] days from the date of invoice by Venmo or PayPal. All proposals are quoted in US dollars.</p>
-    <p>I reserve the right to charge interest on all overdue debts at the rate of [percentage] per month or part of a month.</p>
+    <p>I issue invoices electronically. My payment terms are <span id="payment-days">[number]</span> days from the date of invoice by Zelle, Venmo or PayPal. All proposals are quoted in US dollars.</p>
+    <p>I reserve the right to charge interest on all overdue debts at the rate of <span id="percentage">[percentage]</span> per month or part of a month.</p>
 
     <h2>The not-so-small print</h2>
     <p>Neither of us can transfer this contract to anyone else without the other's permission.</p>
@@ -86,11 +86,18 @@
     <p>Although the language is simple, the intentions are serious and this contract is a legally binding document.</p>
 
     <h2>The dotted line</h2>
-    <p>Signed by [company name]</p>
-    <p id="company-signature"></p>
-    <p>Signed by [customer name]</p>
-    <p id="customer-signature"></p>
-    <p>Date <span id="date">[date]</span></p>
+    <section class="signatures">
+        <section>
+            <p>Signed by <span class="company-name">[company name]</span></p>
+            <p id="company-signature"></p>
+            <p>Date <span id="company-sign-date">[date]</span></p>
+        </section>
+        <section>
+            <p>Signed by <span class="customer-name">[customer name]</span></p>
+            <p id="customer-signature"></p>
+            <p>Date <span id="customer-sign-date">[date]</span></p>
+        </section>
+    </section>
 
     <script src="./cali-contract-killer.js"></script>
 </body>
